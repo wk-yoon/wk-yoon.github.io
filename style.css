@@ -1,0 +1,246 @@
+@charset "shift_jis";
+
+
+
+body {
+	font-family: "メイリオ", "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	font-size: 75%;		/*全般の文字サイズ*/
+	line-height: 2;		/*全般の行間*/
+	color: #666666;		/*全般の文字色*/
+	background: #FFFFFF;	/*背景色*/
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+h1,h2,h3,p,ul,li,dl,dt,dd{
+	margin: 0px;
+	padding: 0px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+img {
+	border: none;
+}
+
+.look {
+	background: #f5f5f5;
+}
+
+.color1 {
+	color: #408200;
+}
+
+
+
+/*全体的なリンク設定
+---------------------------------------------------------------------------*/
+a {
+	color: #333333;		/*リンク部分の文字色*/
+}
+
+a:hover {
+	color: #408200;		/*リンク部分のカーソルオーバー時の文字色*/
+}
+
+
+
+/*コンテナー（特に変更の必要なし）
+---------------------------------------------------------------------------*/
+#container {
+	width: 799px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+}
+
+
+
+/*ヘッダー
+---------------------------------------------------------------------------*/
+#header {
+	height: 400px;
+	width: 799px;
+	position: relative;
+	margin-bottom: 1px;
+}
+
+#header h1 {
+	font-size: 10px;		/*h1タグの文字サイズ*/
+	color: #FFFFFF;			/*h1タグの文字色*/
+	font-weight: normal;	/*太さを通常に戻す。太字がいいならこの１行を外す。*/
+	width: 789px;
+	line-height: 1.4;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	text-align: right;		/*右寄せする指定。左よせがいいならこの1行を外す。*/
+}
+
+
+
+/*メインメニュー
+---------------------------------------------------------------------------*/
+ul#topmenu li {
+	float: left;
+}
+
+ul#topmenu img {
+	vertical-align: bottom;
+}
+
+
+
+/*コンテンツ
+---------------------------------------------------------------------------*/
+#contents {
+	clear: left;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 10px;
+}
+
+
+
+/*サイドコンテンツ
+---------------------------------------------------------------------------*/
+#side {
+	float: left;	/*サイドコンテンツを左側に配置する設定*/
+	width: 200px;	/*サイドコンテンツの幅*/
+	padding-bottom: 100px;
+}
+
+#side h3 {
+	font-size: 100%;
+	line-height: 60px;
+	background: url(images/midashi_bg1.gif) repeat-x;	/*h3タグの背景画像設定*/
+	color: #FFFFFF;		/*h3タグの文字色*/
+	height: 70px;
+	text-align: center;	/*h3見出しのテキストを中央よせにする設定。左よせがいいなら１行削除する。*/
+	overflow: hidden;
+}
+
+#side p {
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
+
+
+
+/*サイドメニュー
+---------------------------------------------------------------------------*/
+ul.sidemenu a {
+	color: #666666;	/*文字色*/
+	text-decoration: none;
+	text-align: center;	/*テキストを中央よせにする設定。左よせがいいなら１行削除する。*/
+	border-bottom: 1px solid #aeaeae;	/*各メニュー下に1pxの直線を引く設定*/
+	display: block;
+	width: 200px;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+ul.sidemenu a:hover {
+	background: #f7f7f7;	/*カーソルオーバー時の背景色*/
+	color: #000000;			/*カーソルオーバー時の文字色*/
+}
+
+
+
+
+/*メインコンテンツ
+---------------------------------------------------------------------------*/
+#main {
+	float: right;	/*メインコンテンツを右側に配置する設定*/
+	width: 570px;	/*メインコンテンツの幅*/
+	padding-bottom: 100px;
+}
+
+#main h2 {
+	font-size: 100%;
+	background: url(images/h2_bg.gif) no-repeat;	/*h2タグの背景画像設定*/
+	color: #FFFFFF;		/*h2タグの文字色*/
+	line-height: 40px;
+	height: 40px;
+	overflow: hidden;
+	padding-left: 10px;
+	padding-right: 50px;
+}
+
+#main p {
+	padding: 0.5em 10px 1em;
+}
+
+
+
+/*商品ボックス設定
+---------------------------------------------------------------------------*/
+.shoppingbox {	/*1個あたりのボックス設定*/
+	width: 570px;
+	overflow: hidden;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px solid #CCCCCC;	/*1個のボックスの下部に入る境界線*/
+}
+
+.shoppingbox .img {	/*画像部分の設定*/
+	float: left;	/*画像ボックスを左よせする*/
+	font-size: 140%;	/*文字の大きさ設定*/
+	font-weight: bold;	/*文字を太くする。通常がいいならこの1行を外す。*/
+	color: #FF0000;		/*文字色。*/
+	text-align: center;	/*センタリング設定*/
+	width: 150px;		/*実際に配置する画像の幅をここに設定する。*/
+}
+
+.shoppingbox h3 {	/*右側のh3タグの設定*/
+	font-size: 100%;
+	margin-left: 160px;	/*左に配置する画像幅より大きな数字で調整して下さい。*/
+	color: #2D49D8;		/*文字色*/
+}
+
+.shoppingbox p {	/*説明文の設定*/
+	margin-left: 160px;	/*左に配置する画像幅より大きな数字で調整して下さい。*/
+	padding: 0px !important;
+}
+
+.shoppingbox a {	/*ボックス内のリンク色設定*/
+	color: #2D49D8;
+}
+
+.shoppingbox a:hover {	/*ボックス内のリンクのカーソルオーバー時の文字色設定*/
+	color: #333333;
+}
+
+
+
+/*フッター
+---------------------------------------------------------------------------*/
+#footer {
+	clear: both;
+	width: 100%;
+	line-height: 1.4;
+	text-align: center;
+}
+
+
+
+/*メインコンテンツ内の「What's New」部分
+---------------------------------------------------------------------------*/
+#main dl.new {
+	width: 550px;			/*What's Newボックスの幅*/
+	height: 300px;		/*What's Newボックスの高さ*/
+	overflow: auto;
+	padding: 10px;
+}
+
+#main dl.new dt {
+	font-weight: bold;	/*日付の色を太字にする*/
+}
+
+#main dl.new dd {
+	border-bottom: 1px solid #cfcfcf;	/*説明文の下に1pxの点線(dotted)を#cfcfcfの色で入れる。*/
+}
